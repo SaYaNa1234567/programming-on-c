@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	char str[81];
+	int i;
+	printf("Bukvi: ");
+	fgets(str, 81, stdin);
+	for (i=0; str[i]!=0; i++){
+		if (str[i]=='a') str[i] = 'A';
+		if (str[i]=='b') str[i] = 'B';
+		if (str[i]=='.') str[i] = ',';
+	}
+	printf("%s", str);
+	return 0;
+}
