@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+struct humen{
+	char name[40];
+	char surname[40];
+	int year;
+};
+int main() {
+	setlocale(LC_ALL, "");
+	FILE *f1;
+	struct humen *m = malloc(100 * sizeof(struct humen));
+	
+    struct humen m1;
+	
+	int i, j;
+	int k = 0;
+	f1 = fopen("text.txt", "r");
+	
+    while (fscanf(f1, "%s %s %d", m[k].name, m[k].surname, &m[k].year) == 3){
+        k = k + 1;
+	}
+    
+    
+    for(i = 0; i < k - 1; i++){
+    	for(j = 0; j < k - 1 - i; j++){
+    		if (m[j].year > m[j+1].year){
+    			m1 = m[j];
+    			m[j]= m[j+1];
+    			m[j+1] = m1;
+			}
+		}
+	}
+    
+    printf("Sorted!\n\n");
+    
+    for(i = 0; i < k; i++) {
+        printf("%d. %s %s, %d year\n", 
+               i + 1, 
+               m[i].name, 
+               m[i].surname, 
+               m[i].year);
+    }
+    
+	return 0;
+}
