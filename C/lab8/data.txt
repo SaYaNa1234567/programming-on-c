@@ -1,0 +1,14 @@
+Anna Smirnova 1993 F 1.72
+Pavel Morozov 1987 M 1.78
+Tatyana Pavlova 1991 F 1.66
+Andrey Fedorov 1984 M 1.85
+Natalia Egorova 1997 F 1.69
+Sergey Vasiliev 1986 M 1.77
+Yulia Popova 1994 F 1.64
+Vladimir Orlov 1982 M 1.83
+Irina Sokolova 1990 F 1.67
+Maxim Nikitin 1998 M 1.79
+Ekaterina Lebedeva 1996 F 1.71
+Konstantin Kozlov 1989 M 1.81
+Svetlana Novikova 2001 F 1.63
+Roman Zakharov 1983 M 1.84
